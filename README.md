@@ -22,7 +22,7 @@ I designed this as a conversational weather assistant that understands natural l
 - User enters Hugging Face API key (one-time setup)
 - We can directly put API key on client side but which is not a good practice.
   So when User open this site, he has to enter API Key (Hugging Face API).
-  It takes to main application, This is one king of login Page.
+  Then it takes to main application, This is one kind of login Page.
 # How to Run
  Prerequisites
  - Node.js
