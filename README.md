@@ -31,9 +31,9 @@ I designed this as a conversational weather assistant that understands natural l
 # Clone the Project
 https://github.com/Navakanth99/WeatherAssistant.git
 # Screen Shots
-<img width="1920" height="1080" alt="Screenshot (385)" src="https://github.com/user-attachments/assets/d867afb2-b71c-4210-bc20-b5321bf3c109" />
+<img width="1883" height="908" alt="Screenshot 2025-09-03 204305" src="https://github.com/user-attachments/assets/426c5879-acec-4b78-96e9-d111ebf19f47" />
 
-<img width="1920" height="1080" alt="Screenshot (386)" src="https://github.com/user-attachments/assets/cce1a4b6-6b89-456b-844b-9ba8f3cca527" /> 
+<img width="1837" height="802" alt="Screenshot 2025-09-03 204332" src="https://github.com/user-attachments/assets/ed90ccfc-00d8-473d-9ef1-206185c67b58" />
 
 Live Project Link 
 https://weather-assistant-6yo5.vercel.app/
