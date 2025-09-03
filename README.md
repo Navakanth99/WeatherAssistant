@@ -3,10 +3,10 @@
 I designed this as a conversational weather assistant that understands natural language queries. Instead of traditional weather apps with forms and dropdowns, users can ask questions like "Will it rain in Tokyo tomorrow evening?" and get intelligent responses.
 
 # Technology Stack
- FrontEnd : React Js
- Styling: CSS
- Model: Large Language Models(LLMs)
- Additional: Weather API, GeoCoding API, Hugging Face API
+ - FrontEnd : React Js
+ - Styling: CSS
+ - Model: Large Language Models(LLMs)
+ - Additional: Weather API, GeoCoding API, Hugging Face API
  
 # API Used
 1. Open-Meteo Weather API
