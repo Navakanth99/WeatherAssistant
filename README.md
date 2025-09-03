@@ -1,64 +1,31 @@
 # Weather Assistant
-
+# Overview
 I designed this as a conversational weather assistant that understands natural language queries. Instead of traditional weather apps with forms and dropdowns, users can ask questions like "Will it rain in Tokyo tomorrow evening?" and get intelligent responses.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Technology Stack
+ FrontEnd : React Js
+ Styling: CSS
+ Model: Large Language Models(LLMs)
+ Additional: Weather API, GeoCoding API, Hugging Face API
+ 
+# API Used
+1. Open-Meteo Weather API
+    Purpose -Free, reliable weather data with hourly forecasts
+            -No API key required, excellent data quality, supports global locations
+3. Open-Meteo Geocoding API
+    Purpose -Convert city names to coordinates
+            -Weather API requires lat/lng coordinates, not city names
+4. Hugging Face Inference API
+   Purpose -Extract entities from user queries and generate friendly weather advice
+# Authentication
+- Requires API key (stored in localStorage for demo purposes)
+- User enters Hugging Face API key (one-time setup)
+- We can directly put API key on client side but which is not a good practice.
+  So when User open this site, he has to enter API Key (Hugging Face API).
+  It takes to main application, This is one king of login Page.
+# How to Run
+ Prerequisites
+ - Node.js
+ - npm
+ - Hugging Face API Key
+ - 
