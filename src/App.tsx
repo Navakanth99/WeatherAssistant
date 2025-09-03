@@ -2,7 +2,7 @@ import React from "react";
 import { useApiKey } from "./hooks/useApiKey";
 import { HuggingFaceService } from "./services/huggingface";
 import { ChatContainer } from "./components/ChatContainer";
-import { ApiKeySetup } from "./components/ApiKeySetUp";
+import { ApiKeySetup } from "./components/ApiKeySetup";
 
 function App() {
   const { apiKey, saveApiKey, hasApiKey } = useApiKey();
